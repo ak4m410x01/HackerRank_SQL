@@ -1,0 +1,7 @@
+SELECT
+    DISTINCT CITY
+FROM
+    STATION
+WHERE
+    NOT CITY REGEXP "^[aeiou]"
+    AND NOT CITY REGEXP "[aeiou]$";
